@@ -88,7 +88,7 @@ namespace Elton.OAuth2
                     request.AddHeader(pair.Key, pair.Value);
             }
 
-            if (headerParams != null)
+            if (queryParams != null)
             {// add query parameter, if any
                 foreach (var pair in queryParams)
                     request.AddQueryParameter(pair.Key, pair.Value);
